@@ -29,7 +29,7 @@ function calcular() {
 
     resultado.innerHTML = `A sua nota é ${soma.toFixed(1)} <br>` +
         `A média de suas notas é ${media.toFixed(1)} <br>` +
-        total(valorRestante);
+        total(valorRestante.toFixed(1));
 
     resultadoErros.innerHTML = validarNota(soma);
 }
