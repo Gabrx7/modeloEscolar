@@ -43,3 +43,17 @@ button {
   border-radius: 25px;
   margin: 10px;
 }
+
+.nota1, .nota2, .nota3 {
+  padding: 5px;
+  border: 3px solid black;
+  border-radius: 15px;
+  font-weight: bold;
+  background-color: var(--primary-color-whitter);
+  color: #fff;
+  margin: 5px;
+}
+
+.resultado-notas-erros{
+  color: red;
+}
