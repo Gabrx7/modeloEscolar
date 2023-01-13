@@ -9,7 +9,7 @@ function calcular() {
     const media = soma / 3;
     const valorRestante = 180 - soma;
 
-    function total(valorRestante) {
+    function total(valorRestante)  {
         if (valorRestante <= 0) {
             return `Você passou com um total de ${Math.abs(valorRestante)} pontos em sobra`
         } else {
@@ -27,9 +27,12 @@ function calcular() {
         }
     }
 
-    resultado.innerHTML = `A sua nota é ${soma.toFixed(1)} <br>` +
-        `A média de suas notas é ${media.toFixed(1)} <br>` +
-        total(valorRestante.toFixed(1));
-
-    resultadoErros.innerHTML = validarNota(soma);
+    function escreverNota() {
+        resultado.innerHTML = ''
+        resultado.innerHTML += `A sua nota é ${soma.toFixed(1)} <br>`;
+        resultado.innerHTML += `A média de suas notas é ${media.toFixed(1)} <br>`;
+        resultado.innerHTML += total(valorRestante.toFixed(1));
+        resultadoErros.innerHTML = validarNota(soma);
+    }
+    escreverNota()
 }
