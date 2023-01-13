@@ -2,7 +2,7 @@
 :root {
   --primary-color: rgb(17, 86, 102);
   --primary-color-darker: rgb(9, 48, 56);
-  --primary-color-whitter: rgb(61, 125, 138);
+  --primary-color-whitter: #3d7d8a;
 }
 
 * {
