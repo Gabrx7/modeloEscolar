@@ -2,6 +2,17 @@ const inputTarefa = document.querySelector('.input-nova-tarefa');
 const btnTarefa = document.querySelector('.btn-add-tarefa');
 const tarefas = document.querySelector('.tarefas');
 
+function focoinput (){
+    inputTarefa.setAttribute("style", "color: rgb(190, 190, 190)");
+    inputTarefa.value = 'Digite aqui:';
+
+    inputTarefa.addEventListener('focus', () => {
+        inputTarefa.setAttribute("style", "color: #fff")
+        inputTarefa.value = ''
+    });
+}
+focoinput();
+
 function criaLi() {
     const li = document.createElement('li');
     return li;
@@ -24,8 +35,8 @@ function criaTarefa(textoInput) {
 }
 
 btnTarefa.addEventListener('click', function () {
-    if (!inputTarefa.value) return
-    criaTarefa(inputTarefa.value);
+    if (!inputTarefa.value || inputTarefa.value === 'Digite aqui:')return
+        criaTarefa(inputTarefa.value);
 });
 
 function limpaInput() {
