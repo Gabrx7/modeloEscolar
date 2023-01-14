@@ -15,7 +15,7 @@ function anonima1() {
     const diaSemana = pegarDiaSemana
 
     const materias = ['Lingua-Inglesa', 'Lingua-Portuguesa', 'Geografia', 'História', 'Sociologia', 'Matematica', 'Quimica', 'Biologia',
-      'Analise e Proj de Sist', 'Ciência da Comp', 'Banco de Dados', 'Prog. Front-end', 'Prog. Back-end', 'Proj de Vida', 'Educ Financeira',
+      'Analise e Proj de Sist', 'Ciência da Comp', 'Banco de Dados', 'Prog. Front-end', 'Prog. Mobile', 'Proj de Vida', 'Educ Financeira',
       'Materia indisponivel'];
 
     const materiasSegunda = `${materias[1]}<br>${materias[2]}<br>
