@@ -62,7 +62,7 @@ document.addEventListener('click', function (e) {
 })
 
 function salvarTarefas() {
-    const liTarefas = tarefas.querySelectorAll('li');
+    const liTarefas = tarefas.querySelectorAll('p');
     const listaDeTarefas = [];
     for (let tarefa of liTarefas) {
         let tarefaTexto = tarefa.innerText;
