@@ -14,7 +14,7 @@ function focoinput (){
 focoinput();
 
 function criaLi() {
-    const li = document.createElement('li');
+    const li = document.createElement('p');
     return li;
 }
 
