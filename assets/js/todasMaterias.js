@@ -35,4 +35,4 @@ function meuEscopoTdsMat() {
         mostrarMaterias()
         criaBotaoFechaMat()
     }
-}meuEscopoTdsMat()
+} meuEscopoTdsMat()
