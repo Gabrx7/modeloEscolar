@@ -29,7 +29,7 @@ function criaBotaoFechaMat() {
         btnVerMat.style.display = 'block';
         btnVerMat.style.position = 'relative';
         btnVerMat.style.left = '50%';
-        btnVerMat.style.top = '70%';
+        btnVerMat.style.top = '50%';
         btnVerMat.style.transform = 'translate(-50%, -50%)';
     }
     document.querySelector(".materias").appendChild(newButton);
