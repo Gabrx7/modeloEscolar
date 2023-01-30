@@ -2,7 +2,7 @@ const materias = ['Lingua-Inglesa', 'Lingua-Portuguesa', 'Geografia', 'História
     'Analise e Proj de Sist', 'Ciência da Comp', 'Banco de Dados', 'Prog. Front-end', 'Prog. Mobile', 'Proj de Vida', 'Educ Financeira'];
 
 const matDiv = document.querySelector('.materias');
-const btnVerMateria = document.getElementById('btnVerMat');
+const btnVerMateria = document.querySelector('.btnVerMat');
 
 
 function limparDiv(div) {
