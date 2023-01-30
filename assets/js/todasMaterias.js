@@ -1,38 +1,38 @@
-const materias = ['Lingua-Inglesa', 'Lingua-Portuguesa', 'Geografia', 'História', 'Sociologia', 'Matematica', 'Quimica', 'Biologia',
-    'Analise e Proj de Sist', 'Ciência da Comp', 'Banco de Dados', 'Prog. Front-end', 'Prog. Mobile', 'Proj de Vida', 'Educ Financeira'];
+function meuEscopoTdsMat() {
+    const materias = ['Lingua-Inglesa', 'Lingua-Portuguesa', 'Geografia', 'História', 'Sociologia', 'Matematica', 'Quimica', 'Biologia',
+        'Analise e Proj de Sist', 'Ciência da Comp', 'Banco de Dados', 'Prog. Front-end', 'Prog. Mobile', 'Proj de Vida', 'Educ Financeira'];
 
-const matDiv = document.querySelector('.materias');
-const btnVerMateria = document.querySelector('.btnVerMat');
+    const matDiv = document.querySelector('.materias');
+    const btnVerMateria = document.querySelector('.btnVerMat');
 
 
-function limparDiv(div) {
-    div.innerHTML = "";
-}
-
-function mostrarMaterias() {
-    for (let i = 0; i < materias.length; i++) {
-        const newContent = materias[i];
-        const newP = document.createElement("h3");
-        const newText = document.createTextNode(newContent);
-        btnVerMateria.style.display === 'none';
-        newP.appendChild(newText);
-        matDiv.appendChild(newP);
+    function limparDiv(div) {
+        div.innerHTML = "";
     }
-}
 
-function criaBotaoFechaMat() {
-    const newButton = document.createElement("button");
-    newButton.className = "btn-fecha-mat"
-    const buttonText = document.createTextNode("Fechar materias");
-    newButton.appendChild(buttonText);
-    newButton.onclick = () => matDiv.innerHTML = "";
-    document.querySelector(".materias").appendChild(newButton);
-}
+    function mostrarMaterias() {
+        for (let i = 0; i < materias.length; i++) {
+            const newContent = materias[i];
+            const newP = document.createElement("h3");
+            const newText = document.createTextNode(newContent);
+            btnVerMateria.style.display === 'none';
+            newP.appendChild(newText);
+            matDiv.appendChild(newP);
+        }
+    }
 
-function verMateriasBtn() {
-    limparDiv(matDiv)
-    mostrarMaterias()
-    criaBotaoFechaMat()
-}
+    function criaBotaoFechaMat() {
+        const newButton = document.createElement("button");
+        newButton.className = "btn-fecha-mat"
+        const buttonText = document.createTextNode("Fechar materias");
+        newButton.appendChild(buttonText);
+        newButton.onclick = () => matDiv.innerHTML = "";
+        document.querySelector(".materias").appendChild(newButton);
+    }
 
-
+    function verMateriasBtn() {
+        limparDiv(matDiv)
+        mostrarMaterias()
+        criaBotaoFechaMat()
+    }
+}meuEscopoTdsMat()
