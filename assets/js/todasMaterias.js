@@ -4,7 +4,6 @@ function meuEscopoTdsMat() {
         'Analise e Proj de Sist', 'Ciência da Comp', 'Banco de Dados', 'Prog. Front-end', 'Prog. Mobile', 'Proj de Vida', 'Educ Financeira'];
 
     const matDiv = document.querySelector('.materias');
-    const btnVerMateria = document.querySelector('.btnVerMat');
 
     function limparDiv(div) {
         div.innerHTML = "";
@@ -27,10 +26,6 @@ function meuEscopoTdsMat() {
         newButton.appendChild(buttonText);
         newButton.onclick = () => matDiv.innerHTML = "";
         document.querySelector(".materias").appendChild(newButton);
-    }
-
-    function tiraBtn() {
-        btnVerMateria.style.display === 'none';
     }
 
     function verMateriasBtn() {
