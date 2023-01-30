@@ -30,7 +30,6 @@ function verMateriasBtn() {
     limparDiv(matDiv)
     mostrarMaterias()
     criaBotaoFechaMat()
-    alert(`oi`)
 }
 
 
