@@ -1,16 +1,12 @@
-const materias = ['Lingua-Inglesa', 'Lingua-Portuguesa', 'Geografia', 'História', 'Sociologia', 'Matematica', 'Quimica', 'Biologia',
-    'Analise e Proj de Sist', 'Ciência da Comp', 'Banco de Dados', 'Prog. Front-end', 'Prog. Mobile', 'Proj de Vida', 'Educ Financeira'];
+const materiasArray = ['Lingua-Inglesa', 'Lingua-Portuguesa', 'Geografia',
+    'História', 'Sociologia', 'Matematica', 'Quimica', 'Biologia',
+    'Analise e Proj de Sist', 'Ciência da Comp', 'Banco de Dados',
+    'Prog. Front-end', 'Prog. Mobile', 'Proj de Vida', 'Educ Financeira'];
 
-const matDiv = document.querySelector('.materias');
-
-function mostrarMaterias() {
-    for (let i = 0; i < materias.length; i++) {
-        const newContent = materias[i];
-        const newP = document.createElement("h3");
-        const newText = document.createTextNode(newContent);
-        newP.appendChild(newText);
-        matDiv.appendChild(newP);
-    }
+for (let i = 0; i < materiasArray.length; i++) {
+    const materia = materiasArray[i];
+    const div = document.createElement('div');
+    div.classList.add('materias');
+    div.textContent = materia;
+    document.body.appendChild(div);
 }
-
-mostrarMaterias()
