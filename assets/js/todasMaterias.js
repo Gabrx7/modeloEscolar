@@ -29,14 +29,15 @@ function meuEscopoTdsMat() {
         document.querySelector(".materias").appendChild(newButton);
     }
 
-    function tiraBtn(){
+    function tiraBtn() {
         btnVerMateria.style.display === 'none';
     }
 
     function verMateriasBtn() {
         limparDiv(matDiv)
         mostrarMaterias()
+        tiraBtn()
         criaBotaoFechaMat()
     }
-    
+
 } meuEscopoTdsMat()
