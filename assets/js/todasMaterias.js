@@ -39,7 +39,7 @@ function meuEscopoTdsMat() {
         
         criaBotaoFechaMat()
 
-        alert(`0.2`)
+        alert(`0.2ok`)
     }
 
 } meuEscopoTdsMat()
