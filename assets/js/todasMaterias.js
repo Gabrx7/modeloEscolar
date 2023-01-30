@@ -17,19 +17,11 @@ function mostrarMaterias() {
     }
 }
 
-function criaBotaoFechaMat() {
-    const newButton = document.createElement("button");
-    newButton.className = "btn-fecha-mat"
-    const buttonText = document.createTextNode("Fechar materias");
-    newButton.appendChild(buttonText);
-    newButton.onclick = () => matDiv.innerHTML = "";
-    document.querySelector(".materias").appendChild(newButton);
-}
+
 
 function verMateriasBtn() {
     limparDiv(matDiv)
     mostrarMaterias()
-    criaBotaoFechaMat()
 }
 
 
