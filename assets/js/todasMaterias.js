@@ -2,6 +2,8 @@ const materias = ['Lingua-Inglesa', 'Lingua-Portuguesa', 'Geografia', 'História
     'Analise e Proj de Sist', 'Ciência da Comp', 'Banco de Dados', 'Prog. Front-end', 'Prog. Mobile', 'Proj de Vida', 'Educ Financeira'];
 
 const matDiv = document.querySelector('.materias');
+const btnAbrirMat = document.querySelector('#btnAbrirMat');
+const btnFechaMat = document.querySelector('#btnFechaMat');
 
 function limparDiv(div) {
     div.innerHTML = "";
@@ -16,8 +18,6 @@ function mostrarMaterias() {
         matDiv.appendChild(newP);
     }
 }
-
-
 
 function verMateriasBtn() {
     limparDiv(matDiv)
