@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+  --primary-color-whitter: #3d7d8a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+button {
+  padding: 5px;
+  border-radius: 15px;
+  border: 3px solid black;
+  font-weight: bold;
+  background-color: var(--primary-color-whitter);
+  color: #fff;
+  margin: 5px;
+  text-align: center;
+}
+
+.input-nova-tarefa{
+  width: 100%;
+  padding: 5px;
+  border: 3px solid black;
+  border-radius: 15px;
+  font-weight: bold;
+  background-color: var(--primary-color-whitter);
+  color: #fff;
+  margin: 5px;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.nota1, .nota2, .nota3 {
+  width: 20%;
+  padding: 5px;
+  border: 3px solid black;
+  border-radius: 15px;
+  font-weight: bold;
+  background-color: var(--primary-color-whitter);
+  color: #fff;
+  margin: 5px;
+}
+
+.resultado-notas-erros{
+  color: red;
+}
+
+.input-calc{
+  width: 100%;
+  padding: 5px;
+  border: 3px solid black;
+  border-radius: 15px;
+  font-weight: bold;
+  background-color: var(--primary-color-whitter);
+  color: #fff;
+  margin: 5px;
+}
+
+.calc-geral-input{
+  width: 100%;
+  padding: 5px;
+  border: 3px solid black;
+  border-radius: 15px;
+  font-weight: bold;
+  background-color: var(--primary-color-whitter);
+  color: #fff;
+  margin: 5px;
+}
+
+.btn-ver-mat{
+  align-items: center;
+  text-align: center;
+}
