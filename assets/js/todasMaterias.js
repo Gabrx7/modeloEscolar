@@ -1,38 +1,35 @@
-const materiasArray = ['Lingua-Inglesa', 'Lingua-Portuguesa', 'Geografia',
-    'História', 'Sociologia', 'Matematica', 'Quimica', 'Biologia',
-    'Analise e Proj de Sist', 'Ciência da Comp', 'Banco de Dados',
-    'Prog. Front-end', 'Prog. Mobile', 'Proj de Vida', 'Educ Financeira'];
+const materias = ['Lingua-Inglesa', 'Lingua-Portuguesa', 'Geografia', 'História', 'Sociologia', 'Matematica', 'Quimica', 'Biologia',
+    'Analise e Proj de Sist', 'Ciência da Comp', 'Banco de Dados', 'Prog. Front-end', 'Prog. Mobile', 'Proj de Vida', 'Educ Financeira'];
 
-let isArrayOpened = false;
+const matDiv = document.querySelector('.materias');
 
-const createMaterias = () => {
-    for (let i = 0; i < materiasArray.length; i++) {
-        const materia = materiasArray[i];
-        const div = document.createElement('div');
-        div.classList.add('materias');
-        div.textContent = materia;
-        document.body.appendChild(div);
+function limparDiv(div) {
+    div.innerHTML = "";
+}
+
+function mostrarMaterias() {
+    for (let i = 0; i < materias.length; i++) {
+        const newContent = materias[i];
+        const newP = document.createElement("h3");
+        const newText = document.createTextNode(newContent);
+        newP.appendChild(newText);
+        matDiv.appendChild(newP);
     }
-};
+}
 
-const btnOpenArray = document.createElement('button');
-btnOpenArray.textContent = 'Abrir Array';
-btnOpenArray.addEventListener('click', () => {
-    if (!isArrayOpened) {
-        createMaterias();
-        isArrayOpened = true;
-    }
-});
-document.body.appendChild(btnOpenArray);
+function criaBotaoFechaMat() {
+    const newButton = document.createElement("button");
+    newButton.className = "btn-fecha-mat"
+    const buttonText = document.createTextNode("Fechar materias");
+    newButton.appendChild(buttonText);
+    newButton.onclick = () => matDiv.innerHTML = "";
+    document.querySelector(".materias").appendChild(newButton);
+}
 
-const btnCloseArray = document.createElement('button');
-btnCloseArray.textContent = 'Fechar Array';
-btnCloseArray.addEventListener('click', () => {
-    if (isArrayOpened) {
-        document.querySelectorAll('.materias').forEach(element => {
-            element.remove();
-        });
-        isArrayOpened = false;
-    }
-});
-document.body.appendChild(btnCloseArray);
+function verMateriasBtn() {
+    limparDiv(matDiv)
+    mostrarMaterias()
+    criaBotaoFechaMat()
+}
+
+
