@@ -1,10 +1,10 @@
 function meuEscopoTdsMat() {
+
     const materias = ['Lingua-Inglesa', 'Lingua-Portuguesa', 'Geografia', 'História', 'Sociologia', 'Matematica', 'Quimica', 'Biologia',
         'Analise e Proj de Sist', 'Ciência da Comp', 'Banco de Dados', 'Prog. Front-end', 'Prog. Mobile', 'Proj de Vida', 'Educ Financeira'];
 
     const matDiv = document.querySelector('.materias');
     const btnVerMateria = document.querySelector('.btnVerMat');
-
 
     function limparDiv(div) {
         div.innerHTML = "";
@@ -15,7 +15,6 @@ function meuEscopoTdsMat() {
             const newContent = materias[i];
             const newP = document.createElement("h3");
             const newText = document.createTextNode(newContent);
-            btnVerMateria.style.display === 'none';
             newP.appendChild(newText);
             matDiv.appendChild(newP);
         }
@@ -30,9 +29,14 @@ function meuEscopoTdsMat() {
         document.querySelector(".materias").appendChild(newButton);
     }
 
+    function tiraBtn(){
+        btnVerMateria.style.display === 'none';
+    }
+
     function verMateriasBtn() {
         limparDiv(matDiv)
         mostrarMaterias()
         criaBotaoFechaMat()
     }
+    
 } meuEscopoTdsMat()
