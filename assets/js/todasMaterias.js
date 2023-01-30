@@ -36,8 +36,10 @@ function meuEscopoTdsMat() {
     function verMateriasBtn() {
         limparDiv(matDiv)
         mostrarMaterias()
-        tiraBtn()
+        
         criaBotaoFechaMat()
+
+        alert(`0.2`)
     }
 
 } meuEscopoTdsMat()
