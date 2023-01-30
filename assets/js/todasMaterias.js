@@ -5,13 +5,14 @@ const matDiv = document.querySelector('.materias');
 const btnAbrirMat = document.querySelector('#btnAbrirMat');
 const btnFechaMat = document.querySelector('#btnFechaMat');
 
-// function mostrarMaterias() {
-//     for (let i = 0; i < materias.length; i++) {
-//         const newContent = materias[i];
-//         const newP = document.createElement("h3");
-//         const newText = document.createTextNode(newContent);
-//         newP.appendChild(newText);
-//         matDiv.appendChild(newP);
-//     }
-// }
+function mostrarMaterias() {
+    for (let i = 0; i < materias.length; i++) {
+        const newContent = materias[i];
+        const newP = document.createElement("h3");
+        const newText = document.createTextNode(newContent);
+        newP.appendChild(newText);
+        matDiv.appendChild(newP);
+    }
+}
 
+mostrarMaterias()
